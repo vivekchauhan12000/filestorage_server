@@ -39,5 +39,6 @@ app.get('/',(req,res)=>res.render('index'));
          });
 
 const port = 3000;
+// how stupid is github when comes to commits
 
 app.listen(port,()=>console.log(`server started on port${port}`));
