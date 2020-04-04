@@ -12,6 +12,10 @@ filename: function(req,file,cb){
 }
 });
 
+const upload = multer({
+  storage:storage
+}).single("myImage");
+
 const app= express();
 
 app.set('view engine','ejs');
